@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".NatificatipnFragment"
+    android:background="#E5E5E5">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#fff"
+        >
+        <RelativeLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            >
+
+
+    <TextView
+        android:id="@+id/display_noti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notifications(3)"
+        android:textSize="20sp"
+         android:padding="2dp"
+        android:fontFamily="@font/semibold"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/all"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/display_noti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#B9020101"
+        android:padding="8dp"
+        android:background="@drawable/all_item_design" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/display_noti"
+        android:layout_toRightOf="@id/all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/circular_border2"
+        >
+
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:padding="1dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/baseline_offline_pin_24"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Offers"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:textColor="#2a2a2a"
+            android:padding="7dp"
+          />
+
+
+    </LinearLayout>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Noti1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lay1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        >
+        <RelativeLayout
+            android:padding="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Atta, Rice, Oil..Up to 50% off!"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:padding="4dp"
+            android:fontFamily="@font/semibold"
+            />
+
+        <LinearLayout
+            android:id="@+id/lay2"
+            android:layout_below="@id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                app:cardCornerRadius="10dp"
+                android:backgroundTint="#DF0404"
+                />
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 days ago"
+                />
+
+
+        </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_below="@id/lay2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_margin="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/lamp2"
+                        android:scaleType="centerCrop"
+                        />
+
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:padding="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No min. order value! Avali Free Shopping on order value of Min \n ₹600! shop Now>"
+                    tools:ignore="HardcodedText" />
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/noti2"
+      android:layout_below="@id/Noti1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      android:layout_marginTop="10dp"        >
+        <RelativeLayout
+            android:padding="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Atta, Rice, Oil..Up to 50% off!"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:padding="4dp"
+            android:fontFamily="@font/semibold"
+            />
+
+        <LinearLayout
+            android:id="@+id/lay3"
+            android:layout_below="@id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                app:cardCornerRadius="10dp"
+                android:backgroundTint="#DF0404"
+                />
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 days ago"
+                />
+
+
+        </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_below="@id/lay3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_margin="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/lamp3"
+                        android:scaleType="centerCrop"
+                        />
+
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:padding="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No min. order value! Avali Free Shopping on order value of Min \n ₹600! shop Now>"
+                    tools:ignore="HardcodedText" />
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+ <androidx.cardview.widget.CardView
+      android:layout_below="@id/noti2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+     android:layout_marginLeft="10dp"
+     android:layout_marginRight="10dp"
+     android:layout_marginTop="10dp"
+     >
+        <RelativeLayout
+            android:padding="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Atta, Rice, Oil..Up to 50% off!"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:padding="4dp"
+            android:fontFamily="@font/semibold"
+            />
+
+        <LinearLayout
+            android:id="@+id/lay4"
+            android:layout_below="@id/text4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                app:cardCornerRadius="10dp"
+                android:backgroundTint="#DF0404"
+                />
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 days ago"
+                />
+
+
+        </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_below="@id/lay4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_margin="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/lamp3"
+                        android:scaleType="centerCrop"
+                        />
+
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:padding="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No min. order value! Avali Free Shopping on order value of Min \n ₹600! shop Now>"
+                    tools:ignore="HardcodedText" />
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
